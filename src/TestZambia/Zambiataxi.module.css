@@ -1,0 +1,196 @@
+body {
+  color: rgb(100, 98, 98);
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+.taxiwrapper {
+  width: 100%;
+  overflow: hidden;
+}
+.header {
+  box-shadow: outset 0 -10px 10px -10px rgba(138, 135, 135, 0.5);
+  z-index: 10;
+  position: fixed;
+  width: 100%;
+  height: 70px;
+  padding-left: 10%;
+  display: flex;
+  background-color: white;
+}
+.header nav ul {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: white;
+}
+
+.header nav ul li {
+  list-style-type: none;
+  width: 160px;
+  align-items: center;
+  color: rgb(178, 34, 34);
+  background-color: white;
+}
+.header nav ul li a:hover {
+  color: rgb(100, 98, 98);
+  border-bottom: solid 3px #000;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+  transform-origin: 100% 50%;
+}
+
+.mainwrapper {
+  position: relative;
+  width: 100%;
+  margin-top: 15%;
+  margin-bottom: 10%;
+}
+.name,
+.emailandphone,
+.cityandkin,
+.roadtaxandfit,
+.Driverlicandphoto {
+  padding: 10px;
+  width: 70%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+.rentalagreementphoto {
+  width: 36%;
+  margin-left: 15%;
+}
+.mainwrapper input {
+  padding-left: 15px;
+  margin: 10px;
+  width: 90%;
+  height: 50px;
+  overflow: hidden;
+  border: 1px solid rgb(102, 98, 98);
+  border-radius: 2px;
+}
+.mainwrapper input[type="file"] {
+  width: 100%;
+  display: flex;
+  align-self: center;
+  padding: 20px;
+  height: 20px;
+}
+.mainwrapper h2 {
+  color: rgb(178, 34, 34);
+  text-align: center;
+  margin-bottom: 10%;
+}
+.mainwrapper label {
+  margin-left: 51%;
+}
+#l2,
+#l4,
+#l6 {
+  margin-left: 16%;
+}
+#l3 {
+  margin-left: 30%;
+}
+#l5 {
+  margin-left: 28%;
+}
+#sendbtn {
+  color: white;
+  width: 130px;
+  height: 45px;
+  margin-left: 15.8%;
+  background-color: rgb(220, 20, 60);
+  border-color: transparent;
+}
+.Footer {
+  height: 35vh;
+  padding-top: 10%;
+  border-top-right-radius: 40%;
+  border-top-left-radius: 40%;
+  background-color: rgb(248, 248, 255);
+}
+.footertop {
+  width: 100%;
+  display: grid;
+  place-items: center;
+  width: 60%;
+  margin: auto;
+  border-bottom: 1px solid rgb(102, 98, 98);
+}
+.homelink,
+.footerlast span {
+  color: rgb(178, 34, 34);
+  text-align: center;
+  margin-bottom: 60px;
+}
+.footerlast {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.socialmedias {
+  display: flex;
+  width: 10%;
+}
+.socialmedias * {
+  display: flex;
+  margin-right: 10px;
+}
+.atag {
+  text-decoration: none;
+  color: rgb(220, 20, 60);
+}
+.atagblue {
+  color: rgb(100, 98, 98);
+}
+#l30,
+#l50 {
+  display: none;
+}
+
+@media screen and (max-width: 1000px) {
+  nav ul .atag {
+    display: none;
+  }
+  .Footer {
+    border-top-right-radius: 0%;
+    border-top-left-radius: 0%;
+  }
+
+  .Footer {
+    height: 50vh;
+  }
+  .footerlast {
+    display: grid;
+  }
+}
+@media screen and (max-width: 765px) {
+  .name,
+  .emailandphone,
+  .cityandkin,
+  .roadtaxandfit,
+  .Driverlicandphoto {
+    display: block;
+  }
+  .mainwrapper {
+    margin-top: 20vh;
+  }
+  .mainwrapper label {
+    margin-left: 16%;
+  }
+  #l3,
+  #l5 {
+    display: none;
+  }
+  #l30,
+  #l50 {
+    display: flex;
+    margin-left: 4%;
+  }
+  .labels {
+    margin-left: 10%;
+  }
+}

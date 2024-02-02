@@ -1,0 +1,36 @@
+.signinWrapper{
+    width: 40%;
+    height: 500px;
+    margin: auto;
+}
+.signin p{
+    margin-top: -10px;
+}
+.emailpart, .pwpart, .btnpart{
+    margin-top: 30px;
+}
+.emailpart span, .pwpart span{
+    font-weight:bolder;
+}
+.emailpart input, .pwpart input{
+    width: 97.5%;
+    height: 40px;
+    border-radius: 1ch;
+    padding-left: 10px;
+}
+.pwpart2{
+    display: flex;
+    justify-content: space-between;
+}
+.pwpart2 a{
+    color: black;
+    text-decoration: none;
+}
+.btnpart{
+    color: aliceblue;
+    width: 100%;
+    height: 50px;
+    margin-top: 70px;
+    border-radius: 1ch;
+    background-color: rgb(70, 70, 145);
+}

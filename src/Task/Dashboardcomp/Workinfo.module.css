@@ -1,0 +1,20 @@
+.workwrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.firstPart {
+  width: 30%;
+  height: 20%;
+  background-color: rgb(133, 133, 133);
+}
+.secondPart {
+  display: flex;
+  width: 70%;
+  height: 70%;
+  background-color: rgb(127, 127, 127);
+}
+.ant-picker-calendar {
+  width: 100%;
+  height: 100%;
+}

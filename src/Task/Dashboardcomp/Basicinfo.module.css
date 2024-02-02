@@ -1,0 +1,17 @@
+.basicinfowrapper {
+  width: 85%;
+  margin: 0 0 0 auto;
+  height: 100%;
+  display: flex;
+  background-image: linear-gradient(rgb(73, 68, 68, 0.9), white);
+}
+.firstPart {
+  width: 30%;
+  height: 20%;
+  background-color: rgb(133, 133, 133);
+}
+.secondPart {
+  width: 70%;
+  height: 70%;
+  background-color: rgb(127, 127, 127);
+}

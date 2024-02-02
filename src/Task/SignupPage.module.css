@@ -1,0 +1,138 @@
+.body{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Fira Sans', sans-serif;
+}
+.nav{
+    margin-left: -8px;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+.nav button{
+    width: 8%;
+    height: 30px;
+    border-radius: 80px;
+    border-color: rgb(172, 255, 172);
+    color: rgb(51, 143, 51);
+    background-color: transparent;
+}
+#title{
+    text-align: center;
+}
+.wrapper{
+    width: 100%;
+    margin-top: 4%;
+    padding-top: 6%;
+    background-image: linear-gradient(rgb(172, 255, 172), white);
+    display: flex;
+    overflow-x: hidden;
+}
+.Mainright{
+    padding-left: 10%;
+}
+.Mainright input, .Mainright label{
+    margin-left: 15%;
+}
+.wrapper img{
+    width: 100%;
+}
+.Mainleft{
+    width: 100%;
+}
+.Mainright{
+    width: 100%;
+}
+.Name, .twin{
+    width: 80%;
+    display: flex;
+    margin-left: 9%;
+}
+.Name1, .Name2, .twin1, .twin2{
+    width: 100%;
+}
+.Name1 input, .Name2 input{
+    width: 100%;
+}
+.wrapper input{
+    width: 67%;
+    height: 30px;
+    border-radius:5px;
+    margin-bottom: 10px;
+}
+.para{
+    margin: auto;
+    width: 72%;
+}
+#list{
+    padding-top: 12%;
+}
+.btn{
+    width: 60%;
+    margin: auto;
+}
+.btn button{
+    width: 100%;
+    height: 50px;
+    border-radius: 90px;
+    border-color: transparent;
+    color: aliceblue;
+    background-color: rgb(31, 250, 177);
+}
+.Left3{
+    width: 100%;
+    height: 160px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.Left3 ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.Signupform {
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 10px 5px rgb(118, 118, 118, .2);
+    width: 75%;
+    background-color: rgb(255, 255, 255);
+}
+.footer{
+    width: 100%;
+    height: 200px;
+    background-color: rgb(99, 99, 99);
+}
+
+
+@media screen and (max-width: 900px){
+
+    .Left3{
+        height: auto;
+    }
+    .Left3 ul{
+        display: block;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    #list{
+        padding-top: 0%;
+    }
+    .wrapper{
+        display: block;
+    }
+    .Name, .twin{
+        display: block;
+        width: 100%;
+        margin-left: 0%;
+    }
+
+
+}

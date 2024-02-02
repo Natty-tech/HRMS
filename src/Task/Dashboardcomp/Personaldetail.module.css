@@ -1,0 +1,17 @@
+.personladetailwrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background-color: bisque;
+}
+.first {
+  width: 30%;
+  height: 20%;
+  background-color: rgb(133, 133, 133);
+}
+.second {
+  display: flex;
+  width: 70%;
+  height: 100%;
+  background-color: rgb(127, 127, 127);
+}

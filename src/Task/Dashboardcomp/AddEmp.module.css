@@ -1,0 +1,196 @@
+.AddEmpWrapper {
+  position: relative;
+  margin: auto;
+  width: 700px;
+  height: 88vh;
+  padding: 10px;
+  overflow: hidden;
+  color: white;
+  background-color: rgb(22, 27, 46);
+  border-radius: 10px;
+}
+.AddEmpWrapper form {
+  position: relative;
+  margin: auto;
+  width: 700px;
+  height: 99%;
+  padding: 10px;
+}
+
+.body {
+  width: 690px;
+  height: 100%;
+  position: absolute;
+  left: 0px;
+  transition: 1s;
+  border-radius: 5px;
+}
+.body h2 {
+  text-decoration: underline;
+}
+.basicscroll {
+  width: 690px;
+  position: absolute;
+  left: -700px;
+  transition: 1s;
+}
+.basicbody {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+.basicbody input,
+.Workbody input,
+.Personalbody input {
+  color: white;
+  width: 300px;
+  height: 40px;
+  background-color: transparent;
+  border: 1px solid white;
+}
+#secondname {
+  justify-self: start;
+  align-self: end;
+  height: auto;
+}
+.basicbtn {
+  display: flex;
+  justify-content: start;
+  margin-top: 10px;
+}
+.basicbtn button {
+  margin-right: 10px;
+  width: 80px;
+  height: 30px;
+  background-color: rgb(117, 120, 255);
+  color: white;
+  border-color: transparent;
+  border-radius: 10px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+.Work {
+  width: 690px;
+  position: absolute;
+  left: 800px;
+  transition: 1s;
+}
+
+.Workbody {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.Workscroll {
+  width: 690px;
+  height: 100vh;
+  position: absolute;
+  left: 0px;
+  transition: 1s;
+  border-radius: 5px;
+}
+.Workscroll h2 {
+  text-decoration: underline;
+}
+.Personal {
+  width: 690px;
+  position: absolute;
+  left: 800px;
+  transition: 1s;
+}
+.Personalbody {
+  display: grid;
+  grid-template-rows: repeat(8, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+}
+.PersonalScroll {
+  width: 690px;
+  height: 86vh;
+  position: absolute;
+  left: 0px;
+  transition: 1s;
+  overflow-y: scroll;
+  border-radius: 5px;
+}
+.PersonalScroll h2 {
+  text-decoration: underline;
+}
+/* Whitemode*/
+.wrapwhitemode {
+  color: black;
+  background-color: rgb(234, 234, 234);
+  position: relative;
+  margin: auto;
+  width: 700px;
+  height: 88vh;
+  margin: 10px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.wrapwhitemode .basicbody input,
+.wrapwhitemode .Workbody input,
+.wrapwhitemode .Personalbody input {
+  width: 300px;
+  height: 40px;
+  background-color: transparent;
+  border: 1px solid black;
+}
+
+/*media query*/
+@media screen and (max-width: 700px) {
+  .AddEmpWrapper {
+    position: relative;
+    margin: auto;
+    width: 100%;
+    min-height: 100%;
+    padding: 10px;
+    overflow-y: hidden;
+    color: white;
+    background-color: rgb(22, 27, 46);
+    border-radius: 10px;
+  }
+  .AddEmpWrapper form {
+    position: relative;
+    margin: auto;
+    width: 100%;
+    max-width: 100%;
+    padding: 10px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+  .body {
+    width: 100%;
+    height: 70vh;
+    position: absolute;
+    left: 0px;
+    transition: 1s;
+    border-radius: 5px;
+  }
+  .Workscroll {
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+  }
+}
+
+@media screen and (max-width: 632px) {
+  .basicbody {
+    width: 100%;
+    display: block;
+  }
+  .Workscroll {
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    transition: 1s;
+    border-radius: 5px;
+    display: block;
+  }
+  .Workbody {
+    display: block;
+  }
+  .Personalbody {
+    display: block;
+  }
+}

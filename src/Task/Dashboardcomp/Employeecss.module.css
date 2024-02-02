@@ -1,0 +1,308 @@
+.wrap {
+  margin: auto;
+  margin: 0 0 0 auto;
+  position: relative;
+  margin-top: 2%;
+  padding: 5px;
+  width: 85%;
+  height: 100%;
+  color: white;
+  background-color: rgb(22, 27, 46);
+  overflow-x: hidden;
+}
+
+.wrap h1 {
+  border-bottom: 1px solid white;
+}
+.empinfo {
+  width: 100%;
+  position: absolute;
+  background-color: rgb(22, 27, 46);
+}
+.empinfowrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.empinfowrapper h2 {
+  text-decoration: underline;
+}
+.first {
+  padding: 5px;
+  display: grid;
+  width: 30%;
+  border-radius: 5px;
+  border: 1px solid white;
+}
+.first img {
+  width: 80px;
+}
+.first input {
+  width: 90%;
+  height: 30px;
+}
+.second input,
+.third input {
+  width: 70%;
+  height: 30px;
+  border-radius: 5px;
+}
+.second {
+  padding: 5px;
+  display: grid;
+  width: 65%;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  border-radius: 5px;
+  border: 1px solid white;
+}
+.second2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5%;
+}
+.third {
+  padding: 5px;
+  display: grid;
+  margin: 0 0 0 auto;
+  margin-top: 2%;
+  width: 65%;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  border-radius: 5px;
+  border: 1px solid white;
+}
+.third2 {
+  margin: 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.lookdivs {
+  width: 90%;
+  height: 30px;
+  border-bottom: 1px solid white;
+}
+#btnpart {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+#btnpart button {
+  width: 100px;
+  height: 30px;
+  margin-right: 20px;
+}
+.statusbtn button {
+  width: 80px;
+  height: 30px;
+  background-color: rgb(117, 120, 255);
+  color: white;
+  border-color: transparent;
+  border-radius: 10px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+.empaddbtn button {
+  width: 100px;
+  height: 40px;
+  background-color: rgb(117, 120, 255);
+  color: white;
+  border-color: transparent;
+  border-radius: 10px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+#xbutton {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  margin-top: -20px;
+}
+.btn {
+  display: flex;
+  justify-content: space-between;
+}
+
+.addEmployee {
+  display: flex;
+  width: 90%;
+  height: 60%;
+  position: absolute;
+  background-color: #414141;
+}
+.addEmployee1 {
+  width: 20%;
+  height: 40%;
+  display: grid;
+  place-items: center;
+}
+.addEmployee2 {
+  margin-left: 10%;
+  width: 60%;
+  padding: 0;
+}
+.empwrapper {
+  width: 100%;
+}
+.emphead,
+.empbody {
+  display: grid;
+  grid-template-rows: repeat(1, 1fr);
+  grid-template-columns: repeat(7, 1fr);
+}
+.empbody li {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  width: 100%;
+  height: 60px;
+  margin-bottom: 5px;
+  background-color: rgb(40, 46, 70);
+}
+
+.page {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: transparent;
+}
+#pagefirst {
+  display: flex;
+  justify-self: center;
+  gap: 5px;
+}
+
+.page button {
+  color: white;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  place-self: center;
+  gap: 10px;
+  background-color: rgb(117, 120, 255);
+  border-radius: 5px;
+  border-color: transparent;
+}
+.icons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#visibleicon,
+#editicon {
+  color: rgb(117, 120, 255);
+}
+#deleteicon {
+  color: #dc143c;
+}
+
+#deleteicon:hover {
+  cursor: pointer;
+  color: #ff0800;
+}
+#visibleicon:hover,
+#editicon:hover {
+  color: rgb(133, 135, 255);
+  cursor: pointer;
+}
+.wrap button:hover {
+  cursor: pointer;
+  background-color: rgb(133, 135, 255);
+}
+
+/*White mode*/
+.wrapwhitemode {
+  margin: auto;
+  margin: 0 0 0 auto;
+  position: relative;
+  margin-top: 1%;
+  padding: 5px;
+  width: 85%;
+  height: 85vh;
+  color: black;
+  background-color: rgb(234, 234, 234);
+  overflow-x: hidden;
+}
+.wrapwhitemode .empbody * {
+  background-color: white;
+}
+.wrapwhitemode form {
+  background-color: rgb(234, 234, 234);
+}
+.wrapwhitemode .icons {
+  background-color: transparent;
+}
+.wrapwhitemode .first,
+.wrapwhitemode .second,
+.wrapwhitemode .third {
+  background-color: white;
+}
+.wrapwhitemode .empinfo {
+  color: black;
+  background-color: rgb(234, 234, 234);
+}
+
+/*Query media*/
+@media screen and (max-width: 980px) {
+  body {
+    width: 100%;
+    overflow-y: hidden;
+  }
+  .wrap {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .first,
+  .second {
+    width: 90%;
+  }
+  .third {
+    width: 100%;
+  }
+  .second {
+    display: block;
+  }
+  .third {
+    display: block;
+  }
+  .empinfowrapper {
+    display: block;
+  }
+  .statusbtn * {
+    width: 15vw;
+  }
+  .statusbtn button {
+    margin-left: 0px;
+    margin: 5px;
+  }
+  .empaddbtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 873px) {
+  .wrap {
+    width: 98%;
+    height: 100%;
+    margin: auto;
+  }
+
+  .empwrapperscroll {
+    overflow-x: scroll;
+  }
+  .empwrapper {
+    width: 180vw;
+  }
+  .page {
+    display: flex;
+    justify-content: start;
+    width: 100%;
+    background-color: transparent;
+  }
+}

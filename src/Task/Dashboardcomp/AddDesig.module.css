@@ -1,0 +1,19 @@
+.addDesigWrapper {
+  width: 40%;
+
+  margin: auto;
+  background-color: rgb(112, 109, 105);
+}
+.add {
+  display: flex;
+}
+.add p {
+  width: 200px;
+  background-color: bisque;
+}
+.add input,
+.add select,
+.add textarea {
+  margin-left: 5%;
+  height: 30px;
+}
